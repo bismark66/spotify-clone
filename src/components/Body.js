@@ -14,10 +14,12 @@ function Body(props) {
   const { user, token, recents, playlists, topTracks, newrelease } = state;
 
   // set an minute time interval to log the recents to the console
-  setInterval(() => {
-    console.log("Interval for recents", recents);
-  }, 60000);
-  console.log("--new release--", newrelease);
+  // setInterval(() => {
+  //   console.log("Interval for recents", recents);
+  // }, 60000);
+  // console.log("--new release--", newrelease);
+
+  // console.log("THis is playlist", playlists);
 
   return (
     <div className="body">
@@ -42,6 +44,7 @@ function Body(props) {
           <FavoriteIcon fontSize="large" />
           <MoreHorizIcon />
         </div>
+        <SongRow track={playlists} caption="Play List" />
         <SongRow track={recents} caption="Recently played" />
 
         <SongRow track={topTracks} caption="Top Tracks" />

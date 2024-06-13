@@ -76,6 +76,11 @@ function App() {
       });
     });
 
+    // get spotify devices
+    spotify.getMyDevices().then((devices) => {
+      console.log("THese are my devices", devices);
+    });
+
     //   console.log("the token is :point", token);
     // console.log("the token is playlist :point", playlists);
     // console.log("this is my recent", recents);

@@ -118,13 +118,13 @@ function SongRow(props) {
     console.log("-------", props.track?.items);
 
     if (props.track?.hasOwnProperty("items")) {
-      console.log("Entered tracks");
+      // console.log("Entered tracks");
       return <>{renderItems(props.track.items)}</>;
     } else if (props.track?.hasOwnProperty("album")) {
-      console.log("Entered Album");
+      // console.log("Entered Album");
       return <>{renderItems(props.track.albums?.items)}</>;
     } else {
-      console.log("none matched the chain");
+      // console.log("none matched the chain");
       return null;
     }
   }
@@ -136,7 +136,7 @@ function SongRow(props) {
         <h5>SEE ALL</h5>
       </div>
       <div className="songRowMain">
-        {console.log("this is the switch statement", Switch(props))}
+        {/* {console.log("this is the switch statement", Switch(props))} */}
 
         {Switch(props)}
       </div>
