@@ -81,6 +81,9 @@ function App() {
       console.log("THese are my devices", devices);
     });
 
+    // spotify.getMySavedTracks.then((saved) => {
+    //   console.log("my saved or liked songs", saved);
+    // });
     //   console.log("the token is :point", token);
     // console.log("the token is playlist :point", playlists);
     // console.log("this is my recent", recents);
